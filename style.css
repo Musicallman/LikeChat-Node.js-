@@ -1,0 +1,168 @@
+body {
+    background-image: url("./src/back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.wrapper
+{
+    margin: 0 30% 2% 30%;
+    width: 40.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f9f9f9;
+    background-color: #F5F5F5;
+}
+header
+{
+    position: fixed;
+    background-color: #00AAFF;
+    width: 40.2%;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+}
+.write
+{
+    position: fixed;
+    bottom: 0;
+    width: 40.2%;
+    z-index: 10;
+    background-color: #F5F5F5;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+#text
+{
+    border: 2px solid #00BFFF;
+    margin: 10px 0;
+    width: 98%;
+    height: 5.5vw;
+    border-radius: 5px;
+}
+#username
+{
+    border: 2px solid #00BFFF;
+    width: 13vw;
+    height: 24px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+#send
+{
+    padding: 5px;
+    border: 1px solid #f7f7f7f7;
+    width: 20%;
+    text-align: center;
+
+}
+#send:hover
+{
+    cursor: pointer;
+}
+.messages
+{
+    margin-top: 60px;
+    margin-bottom: 12vw;
+    width: 100%;
+}
+.message
+{
+    border-bottom: 1px solid #A9A9A9;
+    padding: 5px;
+    position: relative;
+}
+.username
+{
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 1.7vw;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.time
+{
+    position: absolute;
+    right: 5px;
+    width: 12%;
+    top: 10px;
+    color: #A9A9A9;
+}
+.send
+{
+    display: none;
+}
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 768px) {
+header
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+.wrapper
+{
+  width: 100%;
+  margin: 0;
+}
+.write
+{
+    width: 100%;
+}
+#text
+{
+    height: 25vw;
+    width: 85%;
+    border-radius: 5px;
+    font-size: 3.5vw;
+    padding: 5px;
+    padding-left: 10px;
+}
+#username
+{
+    width: 40vw;
+    height: 66px;
+    border-radius: 5px;
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.send
+{
+    display: block;
+    position: absolute;
+    right: 13px;
+    bottom: 90px;
+    width: 12%;
+}
+#send
+{
+    display: none;
+}
+.messages
+{
+    margin-bottom: 40vw;
+    margin-top: 20vw;
+}
+.username
+{
+    font-size: 6vw;
+}
+.text
+{
+    font-size: 5vw;
+}
+.time
+{
+    font-size: 5vw;
+    right: 15px;
+    top:12px;
+}
+}
