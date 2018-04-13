@@ -42,7 +42,7 @@ $(function () {
 
 
         if (username === '' || message === '') {
-            alert('Хуй там плавав');
+            alert('Заполните все поля!');
             return;
         }
         $('#text').val('');
